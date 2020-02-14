@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Debit Card/Bank Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contentArea" >
+    <p>Update your Debit Card and Bank Settings that is linked to your Account</p>
+    <form>
+      <div>
+        <h5 class="diffColor">Debit Card 1</h5>
+      <p class="diffColor">Bank Settings</p>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked" class="topLabel">Bank Account Number </ion-label>
+          <ion-input class="option" required type="number" ></ion-input>
+        </ion-item>
+
+        <ion-item >
+          <ion-label position="stacked" class="topLabel">Select Your Bank</ion-label>
+          <ion-select class="option" >
+            <ion-select-option *ngFor="let x of usersList; let i=index">{{ x.name }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+     
+    </div>
+
+    <div>
+      <h5 class="diffColor">Debit Card 2</h5>
+    <p class="diffColor">Bank Settings</p>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" class="topLabel">Bank Account Number </ion-label>
+        <ion-input class="option" required type="number" ></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="stacked" class="topLabel">Select Your Bank</ion-label>
+        <ion-select class="option">
+          <ion-select-option *ngFor="let x of usersList; let i=index">{{ x.name }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-icon class="ion-text-center" name="add-circle" class="diffColor"> </ion-icon><ion-text class="diffColor">Add Another Debit Card</ion-text>
+
+  <div class="ion-padding">
+    <ion-button expand="block" type="submit" class="ion-no-margin">Update Settings</ion-button>
+  </div>
+
+ 
+    </form>
+
+  </div>
+  
+</ion-content>

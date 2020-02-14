@@ -1,0 +1,25 @@
+ion-toolbar {
+    --ion-background-color: #242424 !important;
+    --ion-text-color: #ffb20f;
+  }
+
+  .contentArea {
+    padding: 0.8rem !important;
+  }
+
+  ion-content {
+    --background: #FBFFFE;
+  }
+  ion-select, ion-input {
+    border: 1px solid #999 !important;
+  
+  }
+  .topLabel {
+    margin-bottom: 10px !important;
+  }
+  .option  {
+    margin-bottom: 10px !important;
+  }
+  .diffColor {
+    color: #ffb20f;
+  }

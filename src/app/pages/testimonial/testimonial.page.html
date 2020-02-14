@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Testimonials</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="contentArea">
+    <p>We believe a great service speaks for itself. That is why we decided to reward our savers to share their own true stories of how Storehouse.ng actually helps them save.</p>
+    </div>
+    <ion-card color="">
+      <ion-card-header>
+        <ion-card-title style="color:#ffb20f">How it Works</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <p style="margin-bottom: 10px;">Step 1: Write your own short victory report of how Storehouse.ng helps you save below. </p>
+        <p>Step 2: Once your victory report is approved, you will get a unique link that you can use to share your victory report with friends/family.</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="">
+      <ion-card-content>
+        <ion-icon name="contact"></ion-icon>
+        <input type="file">
+        <p>Avatar for Your Victory Report</p>
+        <p>Write your own storehouse.ng victory report</p>
+        <ion-textarea placeholder="Type Here"></ion-textarea>
+        <p>This is should truthfully & clearly explain/narrate how Storehouse.ng is helping you or has actually helped you save money. </p>
+        <input type="checkbox"><span>I hereby confirm that this information is true and can be shared by me or storehouse.ng</span>
+        <button ion-button class="btn" (click)="login()">Save Victory Report</button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

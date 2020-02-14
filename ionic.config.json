@@ -1,0 +1,8 @@
+{
+  "name": "storeHouse",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

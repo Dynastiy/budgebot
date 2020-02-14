@@ -1,0 +1,195 @@
+<ion-menu contentId="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      <ion-back-button color="danger"></ion-back-button>
+    </ion-buttons>
+      <ion-text>
+        <h1 class="title"><img class="title-image" src="../../../assets/img/logo.svg" width="40%"/></h1>
+      </ion-text>
+      
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div>
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/overview" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>
+            Overview
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/view-budgets" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="list-box"></ion-icon>
+          <ion-label>
+            View Budgets
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/view-sub" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="card"></ion-icon>
+          <ion-label>
+            View Subscriptions
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <div>
+        <ion-item button (click)="open=!open" [class.active-parent]="open" detail="false">
+          <ion-icon slot="start" name="settings"></ion-icon>
+          <ion-label>
+            Account Settings
+          </ion-label>
+          <ion-icon slot="end" name="ios-arrow-forward" *ngIf="!open"></ion-icon>
+        <ion-icon slot="end" name="ios-arrow-down" *ngIf="open"></ion-icon>
+        
+        </ion-item>
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/billing" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                Billing/Deposit Card
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/withdrawal" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                Withdrawal Settings
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/security" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                Security/Privacy
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/kyc" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                KYC Settings
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </div>
+
+      <div>
+        <ion-item routerLink="/menu/wallet" routerDirection="root" routerLinkActive="active" button (click)="open= !open" [class.active-parent]="open" detail="false">
+          <ion-icon slot="start" name="wallet"></ion-icon>
+          <ion-label>
+            Wallet
+          </ion-label>
+          <ion-icon slot="end" name="ios-arrow-forward" *ngIf="!open"></ion-icon>
+        <ion-icon slot="end" name="ios-arrow-down" *ngIf="open"></ion-icon>
+        
+        </ion-item>
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/fund-wallet" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                Fund Wallet
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list *ngIf="open">
+          <ion-menu-toggle>
+            <ion-item routerLink="/menu/withdraw-wallet" routerDirection="root" routerLinkActive="active">
+              <ion-icon slot="start" name="ellipse"></ion-icon>
+              <ion-label>
+                Withdraw Funds
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </div>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/refferal" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="people"></ion-icon>
+          <ion-label>
+            Refferals
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/quick-links" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="link"></ion-icon>
+          <ion-label>
+            Quicklinks
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/blog" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="book"></ion-icon>
+          <ion-label>
+            Blog
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/testimonial" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="ribbon"></ion-icon>
+          <ion-label>
+            Testimonial
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/menu/faqs" routerDirection="root" routerLinkActive="active">
+          <ion-icon slot="start" name="help"></ion-icon>
+          <ion-label>
+            FAQs
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    <ion-menu-toggle>
+    <ion-item (click)="logout()">
+      <ion-icon slot="start" name="log-out"></ion-icon>
+      <ion-label>
+        Logout
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+    
+    </div>
+  
+  </ion-content>
+
+</ion-menu>
+
+<ion-router-outlet id="content" overview></ion-router-outlet>
+

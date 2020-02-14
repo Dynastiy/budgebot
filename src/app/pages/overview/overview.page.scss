@@ -1,0 +1,42 @@
+ion-toolbar {
+    --ion-background-color: #242424 !important;
+    --ion-text-color: #ffb20f;
+  }
+
+  .hr {
+    margin-top: 1rem;
+    background-color: #ffb20f !important;
+    color: #ffb20f !important;
+    width: max !important; 
+    height: 0.05rem !important;
+  }
+
+  ion-content {
+    --background: #FBFFFE;
+  }
+
+  .card-bg {
+    --background: linear-gradient( rgb(255, 178, 15), rgb(83, 57, 1)) !important;
+    color: #fff !important;
+      // --background: linear-gradient(197deg, rgba(100,100,100,1) 0%, rgba(63,63,63,1) 13.5%, rgba(29,29,29,1) 33.33%, rgba(0,0,0,1) 100%) !important;
+  }
+  .btn {
+    background-color: #242424 !important;
+    color: #fff !important;
+    padding: 0.5rem 1.5rem !important;
+    // margin: auto 0 !important;
+    display:block !important;
+    margin: 0 auto !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 10px !important;
+  }
+  .head1 {
+    font-weight: bold !important;
+  }
+  .contentArea {
+    padding: 0.8rem !important;
+  }
+  .danger {
+    color: #ff0000 !important;
+  }

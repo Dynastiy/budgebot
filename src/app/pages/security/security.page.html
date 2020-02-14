@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Security & Privacy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contentArea">
+    <div>
+      <h3 class="ion-font-gray">Verified Information</h3>
+      <p class="ion-font-gray">Your verified information helps us keep your account safe and secure </p>
+      
+      <div class="hr"></div>
+
+      <p class="ion-font-bold">Email <br>Emmanuel77micahel@gmail.com</p>
+      <p class="ion-font-bold">Phone Number <br>12345678901</p>
+      <p class="ion-font-bold">BVN <br>1234567890</p>
+    </div>
+    
+    
+    <div>
+      <h3 class="ion-font-gray">Password</h3>
+    <p class="ion-font-gray">Change your password to a New One</p>
+    <div class="hr"></div>
+
+    <div>
+      <ion-label position="stacked" class="topLabel"><ion-label position="stacked" class="topLabel">Old Password</ion-label> </ion-label>
+    <ion-input placeholder="Enter Old Password" required type="number" ></ion-input>
+    </div>
+    <div>
+      <ion-label position="stacked" class="topLabel"><ion-label position="stacked" class="topLabel">New Password</ion-label> </ion-label>
+    <ion-input placeholder="Enter New Password" required type="number" ></ion-input>
+    </div>
+    
+    <button ion-button round (click)="login()" class="btn">Change Password</button>
+    </div>
+
+   
+
+    <div>
+      <h3 class="ion-font-gray">Transaction Pin</h3>
+    <p class="ion-font-gray">Change your Pin to a New One</p>
+
+    <div class="hr"></div>
+    <div>
+      <ion-label position="stacked" class="topLabel"><ion-label position="stacked" class="topLabel">Old Pin</ion-label> </ion-label>
+    <ion-input placeholder="Enter Old Pin" required type="number" ></ion-input>
+    </div>
+    <div>
+      <ion-label position="stacked" class="topLabel"><ion-label position="stacked" class="topLabel">New Pin</ion-label> </ion-label>
+    <ion-input placeholder="Enter New Pin" required type="number" ></ion-input>
+    </div>
+    <button ion-button round (click)="login()" class="btn">Change Pin</button>
+    
+    </div>
+
+  </div>
+
+</ion-content>

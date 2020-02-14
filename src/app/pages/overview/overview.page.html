@@ -1,0 +1,46 @@
+<ion-app>
+  <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Overview</ion-title>
+    <ion-icon name="notifications" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contentArea">
+    <h3 class="head1">Hi! Emmanuel</h3>
+  </div>
+  
+  <ion-card class="ion-text-center card-bg">
+    <ion-card-content>
+    <ion-card-title class="head1">GeneralWALLET</ion-card-title>
+     Bal: N30, 000
+    </ion-card-content>
+    <button ion-button btn round (click)="login()" class="btn">MAKE PAYMENT</button>
+  </ion-card>
+
+  <div class="card-bg">
+    <ion-card  class="ion-text-center card-bg ">
+      <ion-card-content>
+        <ion-card-title class="head1">Budgebot</ion-card-title>
+      Create a budget or <br> Create a Transport Fare
+      </ion-card-content>
+      <button ion-button round (click)="login()" class="btn">CLICK HERE</button>
+    </ion-card>
+  </div>
+
+  
+
+  <div class="contentArea">
+    <div class="hr"></div>
+    <h3 class="head1">Your Budgets</h3>
+  <p color="danger"> You have no budgets yet</p>
+  </div>
+  
+</ion-content>
+
+</ion-app>
