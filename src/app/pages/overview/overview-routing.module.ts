@@ -7,7 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: OverviewPage,
-  }
+    // children: [
+    //   {
+    //     path: 'budget-type',
+    //     loadChildren: () => import('../budget-type/budget-type.module').then( m => m.BudgetTypePageModule)
+    //   },
+    // ]
+  },
+  
 ];
 
 @NgModule({
